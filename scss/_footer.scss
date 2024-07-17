@@ -1,0 +1,15 @@
+footer{
+    background-color: $rojo;
+    text-align: center;
+    padding: 3rem;
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        .logoinsta{
+            width: 75px;
+        }
+    }
+}

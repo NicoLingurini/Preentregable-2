@@ -1,0 +1,72 @@
+main{
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    section{
+        padding: 20px auto;
+        margin: 20px auto;
+        h2{
+            color: $rojo;
+            text-decoration: underline $bordo solid;
+            font-size: 3rem;
+        }
+        p{
+            width: 85%;
+            max-width: 1500px;
+            margin: 50px auto;
+        }
+        img{
+            width: 300px;
+            text-align: center;
+            cursor: pointer;
+            transition: 3s;
+            &:hover{
+                transform: scale(1.4);
+                transition: 3s;
+            }
+        }
+    }
+    div{
+        .producto{
+            z-index: -1;
+            .imgprod{
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        .cuadrocontacto{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "nombre dejecomentario mapa"
+            "apellido dejecomentario mapa"
+            "e-mail dejecomentario mapa ";
+            align-items: center;
+            padding: 20px auto;
+            margin: 20px auto;
+            .nombre{
+                grid-area: nombre;
+                max-width: 100%;
+                height: auto;
+            }
+            .apellido{
+                grid-area: apellido;
+                @extend .nombre;
+                }
+            .e-mail{
+                grid-area: e-mail;
+                @extend .nombre;
+                }
+            .dejecomentario{
+                grid-area: dejecomentario;
+                @extend .nombre;
+                }
+            .mapa{
+                grid-area: mapa;
+                @extend .nombre;
+                }
+        } 
+    }
+}

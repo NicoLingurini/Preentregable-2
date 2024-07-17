@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto Mono";
+}
+
+header .barranav {
+  background-color: #ff0000;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+}
+header .barranav .fotonav .imgbarranav {
+  width: 300px;
+}
+header .barranav .botonera {
+  width: 100%;
+}
+header .barranav .botonera li {
+  margin: 3px;
+}
+
+main {
+  padding-top: 15rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+main section {
+  padding: 20px auto;
+  margin: 20px auto;
+}
+main section h2 {
+  color: #ff0000;
+  text-decoration: underline #7a0000 solid;
+  font-size: 3rem;
+}
+main section p {
+  width: 85%;
+  max-width: 1500px;
+  margin: 50px auto;
+}
+main section img {
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: 3s;
+}
+main section img:hover {
+  transform: scale(1.4);
+  transition: 3s;
+}
+main div .producto {
+  z-index: -1;
+}
+main div .producto .imgprod {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+main div .cuadrocontacto {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "nombre dejecomentario mapa" "apellido dejecomentario mapa" "e-mail dejecomentario mapa ";
+  align-items: center;
+  padding: 20px auto;
+  margin: 20px auto;
+}
+main div .cuadrocontacto .nombre, main div .cuadrocontacto .mapa, main div .cuadrocontacto .dejecomentario, main div .cuadrocontacto .e-mail, main div .cuadrocontacto .apellido {
+  grid-area: nombre;
+  max-width: 100%;
+  height: auto;
+}
+main div .cuadrocontacto .apellido {
+  grid-area: apellido;
+}
+main div .cuadrocontacto .e-mail {
+  grid-area: e-mail;
+}
+main div .cuadrocontacto .dejecomentario {
+  grid-area: dejecomentario;
+}
+main div .cuadrocontacto .mapa {
+  grid-area: mapa;
+}
+
+footer {
+  background-color: #ff0000;
+  text-align: center;
+  padding: 3rem;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+footer .footer .logoinsta {
+  width: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  header .barranav {
+    display: block;
+  }
+  header .barranav .fotonav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .barranav .fotonav .imgbarranav {
+    width: 50%;
+  }
+  .cuadrocontacto {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nombre" "apellido" "e-mail" "dejecomentario" "mapa";
+    align-items: center;
+  }
+  .cuadrocontacto .mapatamaño {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

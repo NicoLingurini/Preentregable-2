@@ -1,0 +1,36 @@
+@import "var";
+@import "body";
+@import "header";
+@import "main";
+@import "footer";
+
+@media screen and (max-width:768px){
+    header{
+        .barranav{
+            display:block;
+            .fotonav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .imgbarranav{
+                    width: 50%;
+                }
+            }   
+        }
+    }
+    .cuadrocontacto{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nombre"
+        "apellido"
+        "e-mail"
+        "dejecomentario"
+        "mapa";
+        align-items: center;
+        .mapatamaño{
+            width: 100vw;
+            height: 100vh;
+            }   
+    }
+}
