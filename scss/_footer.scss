@@ -8,12 +8,14 @@ footer{
         align-items: center;
         align-content: space-around;
         flex-wrap: wrap;
-        .logoinsta{
-            width: 50%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .texto.footer{
+            .logoinsta{
+                width: 50%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
         }
+    }
     }
 }
