@@ -29,10 +29,13 @@ main{
     div{
         .producto{
             z-index: -1;
-            .imgprod{
-                width: 300px;
-                margin: 0 auto;
-                text-align: center;
+            .card{
+                .imgprod{
+                    width: 200px;
+                    height: 200px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
             }
         }
         .cuadrocontacto{
