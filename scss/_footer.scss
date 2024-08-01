@@ -1,24 +1,49 @@
-footer{
+.footer {
     background-color: $rojo;
-    text-align: center;
-    padding: 3rem;
-    .footer{
+    color: $blanco;
+    padding: 1rem;
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  
+      .footer-left,
+      .footer-right {
+        flex: 1;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        align-content: space-around;
-        flex-wrap: wrap;
-        .texto.footer{
-            .logoinsta{
-                width: 50%;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+      }
+      
+      .footer-left {
+        justify-content: center;
+        li{
+            list-style-type: none;
         }
-    }
-    .wpfoto{
-        height: 50px;
-    }
+      }
+      
+      .footer-center {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .social-icon {
+          text-decoration: none;
+          margin: 0 0.5rem;
+        }
+        .imglogo{
+          height: 50px;
+        }
+      }
+      
+      .footer-right {
+        justify-content: center;
+        .imglogowp {
+          max-width: 100%;
+          height: 70px;
+        }
+      }
     }
 }
