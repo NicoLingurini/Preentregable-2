@@ -1,6 +1,6 @@
 header{
     .barranav{
-        background-color: $rojo;
+        background: linear-gradient($negro, $rojo, $negro);
         display: flex;
         width: 100%;
         align-items: center;
@@ -8,6 +8,7 @@ header{
         .fotonav{
             .imgbarranav{
                 width: 300px;
+                border-radius: 20%;
             }
         }
         .botonera{
